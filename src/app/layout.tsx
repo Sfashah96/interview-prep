@@ -1,3 +1,6 @@
+
+"use client";
+
 import type { Metadata } from 'next';
 import { Inter, Source_Code_Pro } from 'next/font/google';
 import './globals.css';
@@ -28,6 +31,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from '@/components/ui/sidebar';
+import { usePathname } from 'next/navigation';
 
 const fontBody = Inter({ 
   subsets: ['latin'],
@@ -39,16 +43,34 @@ const fontCode = Source_Code_Pro({
   variable: '--font-code',
 });
 
-export const metadata: Metadata = {
-  title: 'ReactReady',
-  description: 'Your Interview Prep Companion for React & React Native',
-};
+// export const metadata: Metadata = {
+//   title: 'ReactReady',
+//   description: 'Your Interview Prep Companion for React & React Native',
+// };
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+
+  if (pathname === '/onboarding') {
+    return (
+      <html lang="en" className="dark">
+         <head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet" />
+        </head>
+        <body className={cn("font-body antialiased", fontBody.variable, fontCode.variable)}>
+          <main className="p-4">{children}</main>
+          <Toaster />
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="en" className="dark">
        <head>
