@@ -15,7 +15,7 @@ export default function ReactNativePage() {
         <CardDescription>
           Prepare for React Native interview questions.
         </CardDescription>
-      </Header>
+      </CardHeader>
       <CardContent>
         <p>Learning materials for React Native will be available here.</p>
       </CardContent>
