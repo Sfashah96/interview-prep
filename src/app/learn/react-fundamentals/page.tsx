@@ -17,7 +17,7 @@ export default function ReactFundamentalsPage() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Learning materials for React Fundamentals will be available here.</p>
+        <p>Explore the foundational concepts of React, including components, JSX, state, and props.</p>
       </CardContent>
     </Card>
   );

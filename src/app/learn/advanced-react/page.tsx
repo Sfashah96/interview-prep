@@ -17,7 +17,7 @@ export default function AdvancedReactPage() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Learning materials for Advanced React will be available here.</p>
+        <p>Master advanced concepts like performance optimization, hooks, and context.</p>
       </CardContent>
     </Card>
   );

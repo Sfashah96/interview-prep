@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -16,7 +17,7 @@ export default function SettingsPage() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Settings form will be available here.</p>
+        <p>Adjust your preferences and manage your profile information here.</p>
       </CardContent>
     </Card>
   );

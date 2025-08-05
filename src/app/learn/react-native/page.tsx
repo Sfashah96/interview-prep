@@ -17,7 +17,7 @@ export default function ReactNativePage() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Learning materials for React Native will be available here.</p>
+        <p>Learn about mobile development with React Native, including native modules and styling.</p>
       </CardContent>
     </Card>
   );

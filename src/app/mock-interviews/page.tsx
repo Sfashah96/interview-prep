@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -16,7 +17,7 @@ export default function MockInterviewsPage() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>The mock interview simulator will be available here.</p>
+        <p>Test your skills in a simulated interview environment with AI-driven questions and feedback.</p>
       </CardContent>
     </Card>
   );
