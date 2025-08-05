@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -14,7 +15,7 @@ export default function AdvancedReactPage() {
         <CardDescription>
           Dive deep into advanced React topics.
         </CardDescription>
-      </Header>
+      </CardHeader>
       <CardContent>
         <p>Learning materials for Advanced React will be available here.</p>
       </CardContent>

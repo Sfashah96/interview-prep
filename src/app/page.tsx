@@ -37,9 +37,11 @@ export default function Home() {
     <div className="grid gap-6">
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Flame className="text-orange-500" />
-            Your Top Priority Today
+          <CardTitle>
+            <div className="flex items-center gap-2">
+              <Flame className="text-orange-500" />
+              Your Top Priority Today
+            </div>
           </CardTitle>
           <CardDescription>
             Master React Fiber (3 questions left). This is critical for the
@@ -70,9 +72,11 @@ export default function Home() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <BookOpen /> Flashcard
-              <Badge variant="destructive">High Priority</Badge>
+            <CardTitle>
+               <div className="flex items-center gap-2">
+                <BookOpen /> Flashcard
+                <Badge variant="destructive">High Priority</Badge>
+              </div>
             </CardTitle>
             <CardDescription>
               Why can't we call hooks inside conditionals?
@@ -86,8 +90,10 @@ export default function Home() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Code /> Code Challenge
+            <CardTitle>
+              <div className="flex items-center gap-2">
+                <Code /> Code Challenge
+              </div>
             </CardTitle>
             <CardDescription>
               Fix the infinite loop in this `useEffect` hook.
@@ -105,8 +111,10 @@ export default function Home() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <BookOpen /> Concept Deep Dive
+            <CardTitle>
+              <div className="flex items-center gap-2">
+                <BookOpen /> Concept Deep Dive
+              </div>
             </CardTitle>
             <CardDescription>
               You got 73% of Fiber questions wrong. Let's fix that.
